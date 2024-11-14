@@ -79,22 +79,22 @@ El usuario más probable es una persona fanática de Taylor Swift o swiftie, que
 * Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
 * Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
 
-<https://dreamcut.ai/home>
-* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
-* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
+<https://current.com/>
+* Positivo: Organización de la información y cómo se va navegando en el sitio, el scrolling y las fotos/información
+* Negativo: Algunas fotos en algunas páginas son extremadamente grande y usan todo el espacio de la pantalla, por lo que no se ve tan atractivo, porque nos e nota que la página continúa abajo
 
-<https://dreamcut.ai/home>
-* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
-* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
+<https://www.notion.so/product/sites#examples>
+* Positivo: El click en Examples, que te lleva directo a la sección, sin tener que hacer scrolling hasta esa sección
+* Negativo: Tener que subir hasta el principio para que no se pierda la navbar, porque si quiero descargar la aplicación o buscar alguna otra información, tengo que volver al inicio para poder encontrarla nuevamente y realizar la acción
 
-<https://dreamcut.ai/home>
-* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
-* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
+<https://fabric.so/>
+* Positivo: Los colores y contraste, logra algo minimalista, pero llamativo y con buena legibilidad
+* Negativo: Se demora en cargar, por lo que dificulta la navegación a través de la página
 
-<https://dreamcut.ai/home>
-* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
-* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
+<https://poolside.ai/>
+* Positivo: Es interesante la diagramación en dos columnas con márgenes a los costados y que no existiese navbar y se abriesen otras páginas desde el final de la web, como información extra. Además del cambio de tema, luz clara u oscura.
+* Negativo: Tipografías.
 
-<https://dreamcut.ai/home>
-* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
-* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
+<https://www.apple.com/mac-mini/>
+* Positivo: Animaciones sutiles al momento de ir apareciendo
+* Negativo: Cuidar ciertos contrastes en la página web
