@@ -1,41 +1,41 @@
 # mundoswiftie
 
-¿Para qué es esta propuesta? 
+## ¿Para qué es esta propuesta? 
 
 Ofrecer a los Swifties (fans de Taylor Swift) una plataforma centralizada y accesible donde podrán explorar cada era musical e información de la artista.
 
-¿Para quiénes es esta propuesta? 
+##¿Para quiénes es esta propuesta? 
 
-El usuario menos probable es una persona que no sea fanática de Taylor Swift y la música pop en general, principalmente por el contenido más romántico, sentimental y adolescente de las letras, sobre todo en los primeros 3 álbums. Sin embargo, este tipo de usuario puede tener un mayor interés por los discos más maduros de Taylor, como folklore o evermore.
+El usuario menos probable es una persona que odie a Taylor Swift y entre a la página a buscar información para criticarla o saber qué está haciendo sin ningún buen interés. Es una persona que le gusta un par de sus canciones, pero no lo admitiría porque no está de acuerdo con su persona.
 
-Nombre: Juan Peréz
+* Nombre: Emilia Camino
+* Edad: 22 años
+* Comportamientos:
+  * Feminista interseccional
+  * Considera que Taylor Swift representa falsos ideales de feminismo y sororidad
+  * Estudia Sociología
+* Demografía:
+  * 23 años
+  * Vive con su familia en Santiago
+  * Clase media-alta  
 
-Edad: 40 años
+Un usuario promedio e es una persona que no sea fanática de Taylor Swift, principalmente por el contenido más romántico, sentimental y adolescente de las letras, sobre todo en los primeros 3 álbums. Sin embargo, este tipo de usuario puede tener un mayor interés por los discos más maduros de Taylor, como folklore o evermore, o interesarle canciones particulares de la artista, para comprenderla en profundidad.
 
-Comportamientos:
+* Nombre: Juan Peréz
+* Edad: 40 años
+* Comportamientos:
+  * ⁠Amante de la música rap, hip hop y rock
+  * ⁠No le gustan las letras sentimentales y "juveniles"
+  * ⁠Es oficinista en un banco
+* Demografía
+  * 40 años
+  * Vive con su pareja y su hijo de 5 años en Santiago
+  * ⁠Clase media
 
-•⁠  ⁠Amante de la música rap, hip hop y rock
-
-•⁠  ⁠No le gustan las letras sentimentales y "juveniles"
-
-•⁠  ⁠Es oficinista en un banco
-
-Demografía
-
-•⁠  ⁠40 años
-
-•⁠  ⁠Vive con su pareja y su hijo de 5 años en Santiago
-
-•⁠  ⁠Clase media
-
-
-Necesidades y metas
-
-•⁠  ⁠Necesita que la música que lo mantenga entretenido en el trabajo
-
-•⁠  ⁠Busca disfrutar de letras profundas
-
-•⁠  ⁠Mantener su trabajo estable para cuidar de su familia
+* Necesidades y metas
+  * ⁠Necesita que la música que lo mantenga entretenido en el trabajo
+  * ⁠Busca disfrutar de letras profundas
+  * Mantener su trabajo estable para cuidar de su familia
 
 
 --
