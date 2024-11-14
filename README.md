@@ -58,9 +58,7 @@ El usuario más probable es una persona fanática de Taylor Swift o swiftie, que
  * Disfrutar de la música de Taylor Swift a diario
  * ⁠Compartir sus teorías sobre los últimos Easter Eggs con sus amigas swifties
 
-## ¿Qué existe que es similar a la propuesta? 
-
-Sitios web parecidos:
+## Antecedentes
 
 <https://lyrics.lyricfind.com/>
  * ⁠Pros: contiene letras de varios artistas
@@ -75,3 +73,28 @@ Sitios web parecidos:
  * ⁠Pros: es la tienda oficial de Taylor, enfocada en el marketing separado por eras
  * ⁠Contras: solo se centra en la venta de objetos
 
+## Referentes
+
+<https://dreamcut.ai/home>
+* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
+* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
+
+<https://dreamcut.ai/home>
+* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
+* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
+
+<https://dreamcut.ai/home>
+* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
+* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
+
+<https://dreamcut.ai/home>
+* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
+* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
+
+<https://dreamcut.ai/home>
+* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
+* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
+
+<https://dreamcut.ai/home>
+* Positivo: Barra superior en la cual se visualiza qué viene en las siguientes páginas
+* Negativo: Barra del sector izquierdo que no va con el diseño de la página, pareciese que flotara
