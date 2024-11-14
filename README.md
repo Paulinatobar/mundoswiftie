@@ -62,11 +62,11 @@ El usuario más probable es una persona fanática de Taylor Swift o swiftie, que
 
 Sitios web parecidos:
 
-<⁠https://lyrics.lyricfind.com/>
+<https://lyrics.lyricfind.com/>
  * ⁠Pros: contiene letras de varios artistas
  * Contras: no es focalizado en Taylor
 
-<⁠https://www.letras.com/taylor-swift/1364667/traduccion.html>
+<https://www.letras.com/taylor-swift/1364667/traduccion.html>
  * ⁠Pros: contiene letras de varios artistas incluyendo las traducciones
  * Contras: no es focalizado en Taylor
 
