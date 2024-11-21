@@ -24,59 +24,7 @@
         <!-- Meta Tags Generated with https://metatags.io -->
         <meta name="robots" content="noindex, nofollow" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f9f9f9;
-                margin: 0;
-            }
-            .hero {
-                height: 100vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                color: #ff69b4;
-                background-color: #fce4ec;
-            }
-            .album {
-                padding: 50px 20px;
-            }
-            .album:nth-child(even) {
-                background-color: #ffeef7;
-            }
-            .album img {
-                margin-left: 20px; /* Ajusta el valor según necesites */
-            }
-            .navbar {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                background-color: #ff69b4;
-                padding: 10px 20px;
-                display: flex;
-                align-items: center;
-                gap: 15px;
-                z-index: 1000;
-                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            }
-            .navbar a {
-                color: white;
-                text-decoration: none;
-                font-size: 16px;
-                font-weight: bold;
-            }
-            .navbar a:hover {
-                text-decoration: underline;
-            }
-            .content {
-                margin-top: 60px; /* Para evitar que el contenido quede oculto detrás de la barra */
-                padding: 20px;
-            .album .row {
-    padding-top: 20px;  /* Aumenta el espacio entre la fila y la parte superior */
-}
-        </style>
+        <link href="style.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Hero Section -->
@@ -88,217 +36,214 @@
         </nav>
 
         <!-- Contenido de la página -->
-            
-        <div class="hero">
-            <section id="inicio">
-            <div>
-                <h1 class="display-4 fw-bold">✨ Bienvenidos a Mundo Swiftie ✨</h1>
-                <p class="lead">Desliza hacia abajo para explorar los álbumes de Taylor Swift</p>
-            </div>
+        <div id="inicio" class="hero">
+            <section>
+                <div>
+                    <h1 class="display-4 fw-bold">✨ Bienvenidos a Mundo Swiftie ✨</h1>
+                    <p class="lead">Desliza hacia abajo para explorar los álbumes de Taylor Swift</p>
+                </div>
+            </section>
         </div>
-    </section>
-
         <section id="albumes">
-        <div class="container">
-            <div class="album">
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-center">
-                        <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/01-0.webp" alt="Taylor Swift (2006)" class="img-fluid rounded" />
+            <div class="container-fluid px-0">
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/01-0.webp" alt="Taylor Swift (2006)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h1>Taylor Swift</h1>
+                            <h3>24 de octubre del 2006</h3>
+                            <p>El álbum debut que marcó el inicio de una carrera legendaria.</p>
+                        </div>
                     </div>
-                    <div class="col-md-8">
-                        <h1>Taylor Swift</h1>
-                        <h3>24 de octubre del 2006</h3>
-                        <p>El álbum debut que marcó el inicio de una carrera legendaria.</p>
+                </div>                
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/02-0.jpg" alt="Fearless (2008)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>Fearless</h2>
+                            <h3>11 de noviembre del 2008</h3>
+                            <p>El disco que la llevó a la fama mundial, con éxitos como "Love Story".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/03-0.jpg" alt="Speak Now (2010)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>Speak Now</h2>
+                            <h3>25 de octubre del 2010</h3>
+                            <p>Un álbum escrito completamente por Taylor, lleno de historias cautivadoras.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/04-0.webp" alt="Red (2012)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>Red</h2>
+                            <h3>22 de octubre del 2012</h3>
+                            <p>Una mezcla de pop y country que incluye la icónica "All Too Well".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/05-0.jpg" alt="1989 (2014)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>1989</h2>
+                            <h3>27 de octubre del 2014</h3>
+                            <p>El gran salto al pop con éxitos como "Shake It Off" y "Blank Space".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/06-0.jpg" class="img-fluid rounded" alt="Reputation (2017)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>reputation</h2>
+                            <h3>9 de noviembre del 2017</h3>
+                            <p>Una nueva era oscura y empoderada, con "Look What You Made Me Do".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/07-0.jpg" alt="Lover (2019)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>Lover</h2>
+                            <h3>23 de agosto del 2019</h3>
+                            <p>El regreso a los colores vibrantes con canciones como "You Need to Calm Down".</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/08-0.webp" alt="Folklore (2020)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>folklore</h2>
+                            <h3>24 de julio del 2020</h3>
+                            <p>Un álbum íntimo y melancólico que marcó una nueva dirección artística.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/09-0.jpg" alt="Evermore (2020)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>evermore</h2>
+                            <h3>11 de diciembre del 2020</h3>
+                            <p>El álbum hermano de *Folklore*, con historias aún más profundas.</p>
+                        </div>
+                    </div>
+                </div>        
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img
+                                src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/10-0.webp"
+                                alt="Fearless (Taylor's Version) (2021)"
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>Fearless (Taylor's Version)</h2>
+                            <h3>9 de abril del 2021</h3>
+                            <p>Regrabación del segundo álbum de estudio de Taylor.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img
+                                src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/11-0.webp"
+                                alt="Red (Taylor's Version) (2021)"
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>Red (Taylor's Version)</h2>
+                            <h3>12 de noviembre del 2021</h3>
+                            <p>Regrabación con la canción más esperada, de 10 minutos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/12-0.webp" alt="Midnights (2022)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>Midnights</h2>
+                            <h3>21 de octubre del 2022</h3>
+                            <p>Viaje introspectivo y melódico que captura las emociones, los anhelos y los pensamientos más profundos que emergen en la quietud de la medianoche.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img
+                                src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/13-0.jpg"
+                                alt="Speak Now (Taylor's Version) (2023)"
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>Speak Now (Taylor's Version)</h2>
+                            <h3>7 de julio del 2023</h3>
+                            <p>Reinterpretación poderosa y emocional de su icónico álbum de 2010, donde cada canción refleja la madurez y el legado de Taylor Swift, con nuevas versiones llenas de nostalgia y autenticidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/14-0.jpg" alt="1989 (Taylor's Version) (2023)" class="img-fluid rounded" />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>1989 (Taylor's Version)</h2>
+                            <h3>27 de octubre del 2023</h3>
+                            <p>Revitalización brillante de su aclamado álbum pop de 2014, con nuevas mezclas y matices que reafirman su dominio del pop mientras reinterpreta sus clásicos con una energía renovada.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="album">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3 text-center ps-3">
+                            <img
+                                src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/15-0.jpg"
+                                alt="The Tortured Poets Department (2024)"
+                                class="img-fluid rounded"
+                            />
+                        </div>
+                        <div class="col-md-8 ps-5">
+                            <h2>The Tortured Poets Department</h2>
+                            <h3>19 de abril del 2024</h3>
+                            <p>Profundo y personal, logra transformar las emociones más crudas en arte.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="album">
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-center">
-                        <img src="https://static.wikia.nocookie.net/taylor-swift/images/b/bd/Fearless_-_Official.jpg/revision/latest/scale-to-width-down/1000?cb=20231203005823" alt="Fearless (2008)" class="img-fluid rounded" />
-                    </div>
-                    <div class="col-md-8">
-                        <h2>Fearless</h2>
-                        <h3>11 de noviembre del 2008</h3>
-                        <p>El disco que la llevó a la fama mundial, con éxitos como "Love Story".</p>
-                    </div>
-                </div>
-            </div>
-            <div class="album">
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-center">
-                        <img src="https://static.wikia.nocookie.net/taylor-swift/images/8/8f/Taylor_Swift_-_Speak_Now_cover.png/revision/latest/scale-to-width-down/1000?cb=20240624015201" alt="Speak Now (2010)" class="img-fluid rounded" />
-                    </div>
-                    <div class="col-md-8">
-                        <h2>Speak Now</h2>
-                        <h3>25 de octubre del 2010</h3>
-                        <p>Un álbum escrito completamente por Taylor, lleno de historias cautivadoras.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="album">
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-center">
-                        <img src="https://static.wikia.nocookie.net/taylor-swift/images/e/e2/Taylor_Swift_Red_Album_Art_Cover.jpg/revision/latest/scale-to-width-down/1000?cb=20240405115526" alt="Red (2012)" class="img-fluid rounded" />
-                    </div>
-                    <div class="col-md-8">
-                        <h2>Red (2012)</h2>
-                        <h3>22 de octubre del 2012</h3>
-                        <p>Una mezcla de pop y country que incluye la icónica "All Too Well".</p>
-                    </div>
-                </div>
-            </div>
-            <div class="album">
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-center">
-                        <img src="https://static.wikia.nocookie.net/taylor-swift/images/0/0e/Taylor_Swift_1989.JPG/revision/latest/scale-to-width-down/1000?cb=20240405141649" alt="1989 (2014)" class="img-fluid rounded" />
-                    </div>
-                    <div class="col-md-8">
-                        <h2>1989</h2>
-                        <h3>27 de octubre del 2014</h3>
-                        <p>El gran salto al pop con éxitos como "Shake It Off" y "Blank Space".</p>
-                    </div>
-                </div>
-            </div>
-            <div class="album">
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-center">
-                        <img src="https://static.wikia.nocookie.net/taylor-swift/images/7/70/Reputation_Artwork.jpg/revision/latest?cb=20240405120650" alt="Reputation (2017)" class="img-fluid rounded" />
-                    </div>
-                    <div class="col-md-8">
-                        <h2>reputation</h2>
-                        <h3>9 de noviembre del 2017</h3>
-                        <p>Una nueva era oscura y empoderada, con "Look What You Made Me Do".</p>
-                    </div>
-                </div>
-            </div>
-            <div class="album">
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-center">
-                        <img src="https://static.wikia.nocookie.net/taylor-swift/images/3/3d/Lover.jpeg/revision/latest/scale-to-width-down/1000?cb=20240405115758" alt="Lover (2019)" class="img-fluid rounded" />
-                    </div>
-                    <div class="col-md-8">
-                        <h2>Lover</h2>
-                        <h3>23 de agosto del 2019</h3>
-                        <p>El regreso a los colores vibrantes con canciones como "You Need to Calm Down".</p>
-                    </div>
-                </div>
-            </div>
-            <div class="album">
-                <div class="row align-items-center">
-                    <div class="col-md-4 text-center">
-                        <img src="https://static.wikia.nocookie.net/taylor-swift/images/9/95/Folklore.jpeg/revision/latest/scale-to-width-down/1000?cb=20240707171535" alt="Folklore (2020)" class="img-fluid rounded" />
-                    </div>
-                    <div class="col-md-8">
-                        <h2>folklore</h2>
-                        <h3>24 de julio del 2020</h3>
-                        <p>Un álbum íntimo y melancólico que marcó una nueva dirección artística.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="album">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <img src="https://static.wikia.nocookie.net/taylor-swift/images/0/07/Evermore2020HQ.jpeg/revision/latest/scale-to-width-down/1000?cb=20240708141904" alt="Evermore (2020)" class="img-fluid rounded" />
-                </div>
-                <div class="col-md-8">
-                    <h2>evermore</h2>
-                    <h3>11 de diciembre del 2020</h3>
-                    <p>El álbum hermano de *Folklore*, con historias aún más profundas.</p>
-                </div>
-            </div>
-        </div>
-        <div class="album">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <img
-                        src="https://static.wikia.nocookie.net/taylor-swift/images/c/cb/Taylor%27s_Version.jpg/revision/latest/scale-to-width-down/1000?cb=20240707171716"
-                        alt="Fearless (Taylor's Version) (2021)"
-                        class="img-fluid rounded"
-                    />
-                </div>
-                <div class="col-md-8">
-                    <h2>Fearless (Taylor's Version)</h2>
-                    <h3>9 de abril del 2021</h3>
-                    <p>Regrabación del segundo álbum de estudio de Taylor.</p>
-                </div>
-            </div>
-        </div>
-        <div class="album">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <img
-                        src="https://static.wikia.nocookie.net/taylor-swift/images/9/93/Red_%28Taylor%27s_Version%29.jpeg/revision/latest/scale-to-width-down/1000?cb=20240707171757"
-                        alt="Fearless (Taylor's Version) (2021)"
-                        class="img-fluid rounded"
-                    />
-                </div>
-                <div class="col-md-8">
-                    <h2>Red (Taylor's Version)</h2>
-                    <h3>12 de noviembre del 2021</h3>
-                    <p>Regrabación con la canción más esperada, de 10 minutos.</p>
-                </div>
-            </div>
-        </div>
-        <div class="album">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <img src="https://static.wikia.nocookie.net/taylor-swift/images/5/5c/Midnights.jpeg/revision/latest/scale-to-width-down/1000?cb=20240405141418" alt="Fearless (Taylor's Version) (2021)" class="img-fluid rounded" />
-                </div>
-                <div class="col-md-8">
-                    <h2>Midnights (2022)</h2>
-                    <h3>21 de octubre del 2022</h3>
-                    <p>Viaje introspectivo y melódico que captura las emociones, los anhelos y los pensamientos más profundos que emergen en la quietud de la medianoche.</p>
-                </div>
-            </div>
-        </div>
-        <div class="album">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <img
-                        src="https://static.wikia.nocookie.net/taylor-swift/images/a/ac/Speak_Now_TV_cover.jpeg/revision/latest/scale-to-width-down/1000?cb=20240707174151"
-                        alt="Fearless (Taylor's Version) (2021)"
-                        class="img-fluid rounded"
-                    />
-                </div>
-                <div class="col-md-8">
-                    <h2>Speak Now (Taylor's Version) (2023)</h2>
-                    <h3>7 de julio del 2023</h3>
-                    <p>Reinterpretación poderosa y emocional de su icónico álbum de 2010, donde cada canción refleja la madurez y el legado de Taylor Swift, con nuevas versiones llenas de nostalgia y autenticidad.</p>
-                </div>
-            </div>
-        </div>
-        <div class="album">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center">
-                    <img src="https://static.wikia.nocookie.net/taylor-swift/images/5/52/1989TV_Cover.jpeg/revision/latest/scale-to-width-down/1000?cb=20240405141204" alt="Fearless (Taylor's Version) (2021)" class="img-fluid rounded" />
-                </div>
-                <div class="col-md-8">
-                    <h2>1989 (Taylor's Version) (2023)</h2>
-                    <h3>27 de octubre del 2023</h3>
-                    <p>Revitalización brillante de su aclamado álbum pop de 2014, con nuevas mezclas y matices que reafirman su dominio del pop mientras reinterpreta sus clásicos con una energía renovada.</p>
-                </div>
-            </div>
-        </div>
-        <div class="album">
-            <div class="row align-items-center">
-                <div class="col-md-4 text-center ps-3">
-                    <img
-                        src="https://static.wikia.nocookie.net/taylor-swift/images/8/83/THE_TORTURED_POETS_DEPARTMENT_-_THE_ANTHOLOGY.jpg/revision/latest/scale-to-width-down/1000?cb=20241007031035"
-                        alt="Fearless (Taylor's Version) (2021)"
-                        class="img-fluid rounded"
-                    />
-                </div>
-                <div class="col-md-8">
-                    <h2>The Tortured Poets Department (2024)</h2>
-                    <h3>19 de abril del 2024</h3>
-                    <p>Profundo y personal, logra transformar las emociones más crudas en arte.</p>
-                </div>
-            </div>
-        </div>
         </section>
-
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
