@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>✨Mundo Swiftie✨</title>
+        <title>Mundo Swiftie - Home</title>
         <meta name="title" content="✨Mundo Swiftie✨" />
         <meta name="description" content="Mundo Swiftie: Todo sobre Taylor Swift" />
 
@@ -27,225 +27,259 @@
         <link href="style.css" rel="stylesheet" />
     </head>
     <body>
-        <!-- Hero Section -->
-         <nav class="navbar">
-            <a href="#inicio">Inicio</a>
-            <a href="#albumes">Álbumes</a>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+                <a href="pages/albumes.html">Álbumes</a>
+                <ul class="dropdown-menu">
+                    <li><a href="pages/detalleAlbum.html?nombre=taylorSwift">Taylor Swift</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=fearless">Fearless</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=speakNow">Speak Now</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=red">Red</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=1989">1989</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=reputation">reputation</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=lover">Lover</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=folklore">folklore</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=evermore">evermore</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=fearlessTV">Fearless TV</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=redTV">Red TV</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=midnights">Midnights</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=speakNowTV">Speak Now TV</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=1989TV">1989 TV</a></li>
+                    <li><a href="pages/detalleAlbum.html?nombre=ttpd">TTPD</a></li>
+                </ul>
+            </div>
             <a href="#tours">Tours</a>
-            <a href="#noticias">Noticias</a>
+            <a href="#videos">Videos musicales</a>
+            <button class="navbar-toggle">☰</button>
         </nav>
-
-        <!-- Contenido de la página -->
+        <!-- Landing Page -->
         <div id="inicio" class="hero">
             <section>
                 <div>
-                    <h1 class="display-4 fw-bold">✨ Bienvenidos a Mundo Swiftie ✨</h1>
-                    <p class="lead">Desliza hacia abajo para explorar los álbumes de Taylor Swift</p>
+                    <h1 class="titulo">✨ Bienvenidos a Mundo Swiftie ✨</h1>
+                    <p class="texto-parrafo">Desliza hacia abajo para explorar todo lo relacionado a Taylor Swift</p>
+                </div>
+                <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Slide 1 -->
+                        <div class="carousel-item active">
+                            <div class="left">
+                                <h2 class="texto-parrafo">I Can Do It With A Broken Heart</h2>
+                                <p class="texto-mid">The Tortured Poets Department</p>
+                                <a href="https://www.youtube.com/watch?v=Sl6en1NPTYM" target="_blank" class="btn btn-secondary mt-2">Ver video</a>
+                            </div>
+                            <div class="right">
+                                <img src="https://via.placeholder.com/400x400" alt="I Can Do It With A Broken Heart">
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="left">
+                                <h2 class="texto-parrafo">Fortnight (Feat. Post Malone)</h2>
+                                <p class="texto-mid">The Tortured Poets Department</p>
+                                <a href="https://www.youtube.com/watch?v=q3zqJs7JUCQ" target="_blank" class="btn btn-secondary mt-2">Ver video</a>
+                            </div>
+                            <div class="right">
+                                <img src="https://via.placeholder.com/400x400" alt="Fortnight">
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="left">
+                                <h2 class="texto-parrafo">I Can See You</h2>
+                                <p class="texto-mid">Speak Now (Taylor's Version)</p>
+                                <a href="https://www.youtube.com/watch?v=lVkKLf4DCn8" target="_blank" class="btn btn-secondary mt-2">Ver video</a>
+                            </div>
+                            <div class="right">
+                                <img src="https://via.placeholder.com/400x400" alt="I Can See You">
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="carousel-item">
+                            <div class="left">
+                                <h2 class="texto-parrafo">Karma (feat. Ice Spice)</h2>
+                                <p class="texto-mid">Midnights</p>
+                                <a href="https://www.youtube.com/watch?v=XzOvgu3GPwY" target="_blank" class="btn btn-secondary mt-2">Ver video</a>
+                            </div>
+                            <div class="right">
+                                <img src="https://via.placeholder.com/400x400" alt="Karma">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controles -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>                  
+            </section>
+        </div>
+        <div class="seccion fondo-azul-claro">
+            <section>
+                <h2 class="subtitulo-seccion pt-4">Álbumes</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=taylorSwift">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/01-0.webp" alt="Taylor Swift">
+                            <p class="mt-2 texto-parrafo">Taylor Swift</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=fearless">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/02-0.jpg" alt="Fearless">
+                            <p class="mt-2 texto-parrafo">Fearless</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=speakNow">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/03-0.jpg" alt="Speak Now">
+                            <p class="mt-2 texto-parrafo">Speak Now</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=red">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/04-0.webp" alt="Red">
+                            <p class="mt-2 texto-parrafo">Red</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=1989">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/05-0.jpg" alt="1989">
+                            <p class="mt-2 texto-parrafo">1989</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=reputation">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/06-0.jpg" alt="reputation">
+                            <p class="mt-2 texto-parrafo">reputation</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=lover">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/07-0.jpg" alt="Lover">
+                            <p class="mt-2 texto-parrafo">Lover</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=folklore">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/08-0.webp" alt="folklore">
+                            <p class="mt-2 texto-parrafo">folklore</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=evermore">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/09-0.jpg" alt="evermore">
+                            <p class="mt-2 texto-parrafo">evermore</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=fearlessTV">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/10-0.webp" alt="Fearless (Taylor's Version)">
+                            <p class="mt-2 texto-parrafo">Fearless (Taylor's Version)</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=redTV">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/11-0.webp" alt="Red (Taylor's Version)">
+                            <p class="mt-2 texto-parrafo">Red (Taylor's Version)</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=midnights">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/12-0.webp" alt="Midnights">
+                            <p class="mt-2 texto-parrafo">Midnights</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=speakNowTV">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/13-0.jpg" alt="Speak Now (Taylor's Version)">
+                            <p class="mt-2 texto-parrafo">Speak Now (Taylor's Version)</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=1989TV">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/14-0.jpg" alt="1989 (Taylor's Version)">
+                            <p class="mt-2 texto-parrafo">1989 (Taylor's Version)</p>
+                        </a>
+                    </div>
+                    <div class="grid-item">
+                        <a href="pages/detalleAlbum.html?nombre=ttpd">
+                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/15-0.jpg" alt="The Tortured Poets Department">
+                            <p class="mt-2 texto-parrafo">The Tortured Poets Department</p>
+                        </a>
+                    </div>
                 </div>
             </section>
         </div>
-        <section id="albumes">
-            <div class="container-fluid px-0">
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/01-0.webp" alt="Taylor Swift (2006)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h1>Taylor Swift</h1>
-                            <h3>24 de octubre del 2006</h3>
-                            <p>El álbum debut que marcó el inicio de una carrera legendaria.</p>
-                        </div>
+        <div>
+            <section>
+                <h2 class="subtitulo-seccion pt-4">Tours</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/06-0.jpg" alt="Fearless Tour">
+                        <p class="mt-2 texto-parrafo">Fearless Tour</p>
                     </div>
-                </div>                
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/02-0.jpg" alt="Fearless (2008)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>Fearless</h2>
-                            <h3>11 de noviembre del 2008</h3>
-                            <p>El disco que la llevó a la fama mundial, con éxitos como "Love Story".</p>
-                        </div>
+                    <div class="grid-item">
+                        <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/06-0.jpg" alt="Speak Now World Tour">
+                        <p class="mt-2 texto-parrafo">Speak Now World Tour</p>
                     </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/03-0.jpg" alt="Speak Now (2010)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>Speak Now</h2>
-                            <h3>25 de octubre del 2010</h3>
-                            <p>Un álbum escrito completamente por Taylor, lleno de historias cautivadoras.</p>
-                        </div>
+                    <div class="grid-item">
+                        <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/06-0.jpg" alt="The Red Tour">
+                        <p class="mt-2 texto-parrafo">The Red Tour</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/06-0.jpg" alt="The 1989 World Tour">
+                        <p class="mt-2 texto-parrafo">The 1989 World Tour</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/06-0.jpg" alt="Reputation Stadium Tour">
+                        <p class="mt-2 texto-parrafo">Reputation Stadium Tour</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/06-0.jpg" alt="City of Lover">
+                        <p class="mt-2 texto-parrafo">City of Lover</p>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/06-0.jpg" alt="The Eras Tour">
+                        <p class="mt-2 texto-parrafo">The Eras Tour</p>
                     </div>
                 </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/04-0.webp" alt="Red (2012)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>Red</h2>
-                            <h3>22 de octubre del 2012</h3>
-                            <p>Una mezcla de pop y country que incluye la icónica "All Too Well".</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/05-0.jpg" alt="1989 (2014)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>1989</h2>
-                            <h3>27 de octubre del 2014</h3>
-                            <p>El gran salto al pop con éxitos como "Shake It Off" y "Blank Space".</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/06-0.jpg" class="img-fluid rounded" alt="Reputation (2017)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>reputation</h2>
-                            <h3>9 de noviembre del 2017</h3>
-                            <p>Una nueva era oscura y empoderada, con "Look What You Made Me Do".</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/07-0.jpg" alt="Lover (2019)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>Lover</h2>
-                            <h3>23 de agosto del 2019</h3>
-                            <p>El regreso a los colores vibrantes con canciones como "You Need to Calm Down".</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/08-0.webp" alt="Folklore (2020)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>folklore</h2>
-                            <h3>24 de julio del 2020</h3>
-                            <p>Un álbum íntimo y melancólico que marcó una nueva dirección artística.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/09-0.jpg" alt="Evermore (2020)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>evermore</h2>
-                            <h3>11 de diciembre del 2020</h3>
-                            <p>El álbum hermano de *Folklore*, con historias aún más profundas.</p>
-                        </div>
-                    </div>
-                </div>        
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img
-                                src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/10-0.webp"
-                                alt="Fearless (Taylor's Version) (2021)"
-                                class="img-fluid rounded"
-                            />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>Fearless (Taylor's Version)</h2>
-                            <h3>9 de abril del 2021</h3>
-                            <p>Regrabación del segundo álbum de estudio de Taylor.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img
-                                src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/11-0.webp"
-                                alt="Red (Taylor's Version) (2021)"
-                                class="img-fluid rounded"
-                            />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>Red (Taylor's Version)</h2>
-                            <h3>12 de noviembre del 2021</h3>
-                            <p>Regrabación con la canción más esperada, de 10 minutos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/12-0.webp" alt="Midnights (2022)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>Midnights</h2>
-                            <h3>21 de octubre del 2022</h3>
-                            <p>Viaje introspectivo y melódico que captura las emociones, los anhelos y los pensamientos más profundos que emergen en la quietud de la medianoche.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img
-                                src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/13-0.jpg"
-                                alt="Speak Now (Taylor's Version) (2023)"
-                                class="img-fluid rounded"
-                            />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>Speak Now (Taylor's Version)</h2>
-                            <h3>7 de julio del 2023</h3>
-                            <p>Reinterpretación poderosa y emocional de su icónico álbum de 2010, donde cada canción refleja la madurez y el legado de Taylor Swift, con nuevas versiones llenas de nostalgia y autenticidad.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center">
-                            <img src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/14-0.jpg" alt="1989 (Taylor's Version) (2023)" class="img-fluid rounded" />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>1989 (Taylor's Version)</h2>
-                            <h3>27 de octubre del 2023</h3>
-                            <p>Revitalización brillante de su aclamado álbum pop de 2014, con nuevas mezclas y matices que reafirman su dominio del pop mientras reinterpreta sus clásicos con una energía renovada.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="album">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-3 text-center ps-3">
-                            <img
-                                src="https://raw.githubusercontent.com/Paulinatobar/dno096-evaluacion03/refs/heads/main/img/15-0.jpg"
-                                alt="The Tortured Poets Department (2024)"
-                                class="img-fluid rounded"
-                            />
-                        </div>
-                        <div class="col-md-8 ps-5">
-                            <h2>The Tortured Poets Department</h2>
-                            <h3>19 de abril del 2024</h3>
-                            <p>Profundo y personal, logra transformar las emociones más crudas en arte.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            // Navbar móvil
+            const toggleButton = document.querySelector('.navbar-toggle');
+            const links = document.querySelectorAll('.navbar a');
+
+            toggleButton.addEventListener('click', () => {
+                links.forEach(link => {
+                    link.classList.toggle('active');
+                });
+            });
+
+            // Carrusel
+            const carousel = document.querySelector('.carousel');
+            let scrollAmount = 0;
+
+            setInterval(() => {
+                scrollAmount += carousel.offsetWidth;
+                if (scrollAmount >= carousel.scrollWidth) {
+                    scrollAmount = 0;
+                }
+                carousel.scrollTo({
+                    left: scrollAmount,
+                    behavior: 'smooth',
+                });
+            }, 3000);
+        </script>
     </body>
 </html>
 
