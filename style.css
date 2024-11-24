@@ -5,71 +5,320 @@
   --bs-body-font-family: var(--bs-font-sans-serif);
 }
 
-.display-1{
-  font-size: calc(1.625rem + 5vw);
-  font-weight: 100;
+a {
+  text-decoration: none;
+  color: #033D49;
 }
 
-.display-2{
-  font-size: calc(1.625rem + 5vw);
-  font-weight: 300;
-}
-
-.font-size-large {
-  font-size: 20px;
-}
-
+/* General */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
-  margin: 0;
+  background-color: #F4F4F9;
 }
 
-.hero {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #ff69b4;
-  background-color: #fce4ec;
+/* Tipografía responsiva */
+.titulo {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+  color: #033D49;
 }
 
+.titulo-seccion {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: bold;
+  color: #033D49;
+  margin-left: 2%;
+  margin-top: 100px;
+}
+
+.subtitulo {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: bold;
+  margin-left: 2%;
+  color: #033D49;
+}
+
+.subtitulo-seccion {
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
+  font-weight: bold;
+  margin-left: 2%;
+  color: #033D49;
+}
+
+.subtitulo-card {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: bold;
+  color: #033D49;
+}
+
+.texto-parrafo {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  color: #033D49;
+}
+
+.texto-parrafo-bold {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  font-weight: bold;
+  color: #033D49;
+}
+
+.texto-mid {
+  font-size: clamp(0.75rem, 2.2vw, 1rem);
+  color: #033D49;
+}
+
+.texto-small {
+  font-size: clamp(0.5rem, 2vw, 0.75rem);
+  color: #033D49;
+}
+
+/* Fondo azul claro */ 
+.fondo-azul-claro {
+  background-color: #d6f0f5;
+  width: 100%;
+}
+
+/* Navbar */
 .navbar {
-  display: flex; /* Usar flexbox para alinear los elementos */
-  align-items: center; /* Centra verticalmente los elementos */
-  justify-content: flex-start; /* Alinea los elementos hacia la izquierda */
-  gap: 20px; /* Espaciado entre los enlaces */
-  padding: 10px 20px; /* Espaciado interno de la barra */
-  background-color: #ff69b4; /* Fondo claro */
-  border-bottom: 1px solid #ddd; /* Línea inferior opcional */
+  position: fixed; /* Pegado a la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Alineación vertical */
+  justify-content: flex-start; /* Alinear los elementos a la derecha */
+  padding: 20px 20px;
+  gap: 20px;
+  background-color: #033D49;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar a {
-  text-decoration: none; /* Quita el subrayado de los enlaces */
-  color: #ffffff; /* Color de texto */
-  font-size: 16px; /* Tamaño de fuente */
-  font-weight: bold; /* Fuente en negrita */
-  padding: 5px 10px; /* Espaciado interno de cada enlace */
-  transition: color 0.3s ease; /* Animación suave para el hover */
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: semibold;
+  margin-left: 20px; /* Espaciado entre los enlaces */
+  transition: color 0.3s ease;
 }
 
 .navbar a:hover {
   text-decoration: underline;
 }
 
+/* Botón del menú móvil */
+.navbar-toggle {
+  display: none; /* Ocultar el botón en escritorio */
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Los enlaces y el botón en columna */
+    align-items: flex-start; /* Alinear a la izquierda en móviles */
+    padding: 10px;
+  }
+
+  .navbar a {
+    display: none; /* Ocultar enlaces inicialmente */
+    width: 100%; /* Ocupan todo el ancho */
+    padding: 10px 0;
+    text-align: left;
+  }
+
+  .navbar a.active {
+    display: block; /* Mostrar los enlaces cuando estén activos */
+  }
+
+  .navbar-toggle {
+    display: block; /* Mostrar el botón en móviles */
+  }
+}
+
+/* Estilo para el contenedor del menú desplegable */
+.navbar .dropdown {
+  position: relative; /* Necesario para posicionar el submenú */
+}
+
+.navbar .dropdown-menu {
+  display: none; /* Ocultar el submenú por defecto */
+  position: absolute;
+  top: 100%; /* Coloca el submenú justo debajo del enlace "Álbumes" */
+  left: 0;
+  background-color: #033D49;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999; /* Asegúrate de que el submenú esté encima de otros elementos */
+}
+
+.navbar .dropdown-menu li {
+  padding: 10px 10px;
+}
+
+.navbar .dropdown-menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  display: block; /* Hacer que los enlaces ocupen todo el ancho */
+  font-size: 16px;
+  font-weight: semibold;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .dropdown-menu li a:hover {
+  background-color: #1b5e65; /* Cambiar color al pasar el mouse */
+}
+
+/* Mostrar el submenú al pasar el mouse sobre el contenedor */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+/* Carrusel */
+#customCarousel {
+  margin-top: 50px;
+}
+
+.carousel-item {
+  display: none; /* Oculta los elementos no activos */
+  flex-direction: row;
+  height: 400px;
+  align-items: stretch;
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-item .left,
+.carousel-item .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-item .left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #d6f0f5;
+}
+
+.carousel-item .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.carousel-item .right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .carousel-item {
+    flex-direction: column; /* Cambia la dirección a columnas en pantallas pequeñas */
+  }
+
+  .carousel-item .left {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .carousel-item .right img {
+    height: auto;
+  }
+}
+
+/* Landing page */
+.hero {
+  height: 100vh;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #033D49;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 150vh;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #033D49;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Imágenes */
+.grid-item img {
+  width: 90%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#album {
+  margin-top: 100px;
+}
+
+/* Album */
 .album {
   padding: 50px 20px;
 }
 
 .album:nth-child(even) {
-  background-color: #ffeef7;
+  background-color: #d6f0f5;
 }
 
 .album img {
-  margin-left: 20px; /* Ajusta el valor según necesites */
+  margin-left: 20px;
 }
 
 .album .row {
-  padding-top: 20px;  /* Aumenta el espacio entre la fila y la parte superior */
+  padding-top: 20px;
+}
+
+/* Listado letra */
+.listaCancion:hover{
+  background-color: #d6f0f5;
+  cursor: pointer;
 }
