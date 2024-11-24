@@ -71,6 +71,11 @@ body {
   color: #033D49;
 }
 
+.texto-small-footer {
+  font-size: clamp(0.5rem, 2vw, 0.75rem);
+  color: #ffffff;
+}
+
 /* Fondo azul claro */ 
 .fondo-azul-claro {
   background-color: #d6f0f5;
@@ -217,16 +222,20 @@ body {
 }
 
 .carousel-item .right {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  height: 100%; /* Asegura que ocupe todo el alto disponible */
 }
 
 .carousel-item .right img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+  height: 100%; /* Ajusta el alto de la imagen al contenedor */
+  object-fit: cover; /* Hace que la imagen llene el espacio */
+  display: block; /* Elimina cualquier espacio blanco extra */
 }
 
 /* Responsive */
@@ -296,11 +305,38 @@ body {
   }
 }
 
+.grid-container-tour {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid-container-tour {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.grid-item-tour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grid-item-tour img {
+  width: 350px;
+  height: 550px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Álbum */
 #album {
   margin-top: 100px;
 }
 
-/* Album */
 .album {
   padding: 50px 20px;
 }
@@ -321,4 +357,65 @@ body {
 .listaCancion:hover{
   background-color: #d6f0f5;
   cursor: pointer;
+}
+
+/* Cards y grillas de videos */
+.custom-card {
+  background-color: #033D49 !important;
+}
+
+.custom-video {
+  max-width: 1000px;
+  margin: 0 auto; 
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.custom-video iframe {
+  width: 100%; 
+  height: 100%;
+  border: none;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Dos columnas por defecto */
+  gap: 15px; /* Espacio entre las tarjetas */
+}
+
+.custom-card {
+  background-color: #033D49 !important;
+}
+
+.custom-video {
+  max-width: 100%;
+  margin: 0 auto; 
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.custom-video iframe {
+  width: 100%; 
+  height: 100%;
+  border: none;
+}
+
+/* Responsividad: un solo video por fila en móviles */
+@media (max-width: 768px) {
+  .video-grid {
+    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+}
+
+/* Footer */
+.bg-custom {
+  background-color: #033D49;
+}
+
+/* Aplicamos un margen horizontal en pantallas pequeñas */
+@media (max-width: 768px) {
+  .margin-footer {
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
 }
